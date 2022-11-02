@@ -34,10 +34,10 @@ public class GHTest {
         driver.manage ().window ().maximize ();
     }
 
-//    @AfterMethod
-//    public void tearDown() {
-//        driver.quit ();
-//    }
+    @AfterMethod
+    public void tearDown() {
+        driver.quit ();
+    }
     @Test
     public void testNameWrong() throws InterruptedException {
         driver.get ("https://www.grubhub.com/");
